@@ -12,7 +12,8 @@ const ProductCard = memo(({ product }) => {
   const isOutOfStock = product.stock === 0
   const cartQuantity = getItemQuantity(product.id)
 
-  const handleAddToCart = () => {
+  const handleAddToCart = (e) => {
+    e.stopPropagation() // Prevent card click when button is clicked
     if (!isOutOfStock) {
       addToCart(product, 1)
     }
