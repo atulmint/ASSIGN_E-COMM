@@ -140,3 +140,8 @@
   opacity: 0.6;
 }
 
+.add-to-cart-btn:focus {
+  outline: 2px solid #3498db;
+  outline-offset: 2px;
+}
+
