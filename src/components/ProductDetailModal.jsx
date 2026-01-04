@@ -11,10 +11,10 @@ const ProductDetailModal = ({ product, isOpen, onClose }) => {
   const isOutOfStock = product?.stock === 0
   const cartQuantity = product ? getItemQuantity(product.id) : 0
 
-  // Close modal on Escape key
+  // Close modal on Escape key or overlay click
   useEffect(() => {
     const handleEscape = (e) => {
-      if (e.key === 'Escape') {
+      if (e.key === 'Escape' && isOpen) {
         onClose()
       }
     }
