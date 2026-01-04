@@ -39,7 +39,9 @@ const Cart = ({ isOpen, onClose }) => {
                     <div className="cart-item-info">
                       <h4 className="cart-item-name">{item.name}</h4>
                       <p className="cart-item-category">{item.category}</p>
-                      <p className="cart-item-price">${item.price.toFixed(2)} each</p>
+                      <p className="cart-item-price">
+                ${item.price.toFixed(2)} <span className="price-label">each</span>
+              </p>
                     </div>
                     
                     <div className="cart-item-controls">
