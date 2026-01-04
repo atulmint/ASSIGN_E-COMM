@@ -76,7 +76,9 @@ const ProductDetailModal = ({ product, isOpen, onClose }) => {
             )}
 
             {cartQuantity > 0 && (
-              <p className="modal-cart-indicator">In cart: {cartQuantity}</p>
+              <p className="modal-cart-indicator">
+                In cart: {cartQuantity} {cartQuantity === 1 ? 'item' : 'items'}
+              </p>
             )}
 
             <button
