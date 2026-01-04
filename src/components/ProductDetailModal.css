@@ -58,6 +58,11 @@
   background: rgba(0, 0, 0, 0.7);
 }
 
+.modal-close-btn:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
 .modal-body {
   display: grid;
   grid-template-columns: 1fr 1fr;
