@@ -1,6 +1,7 @@
 /**
  * Product Service
  * Fetches products from API or uses mock data as fallback
+ * Returns 20 products to meet assignment requirements
  */
 
 const API_URL = 'https://dummyjson.com/products'
