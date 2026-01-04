@@ -32,6 +32,8 @@ const ProductListing = () => {
         setProducts(data)
       } catch (error) {
         console.error('Error loading products:', error)
+        // Set empty array on error to show empty state
+        setProducts([])
       } finally {
         setLoading(false)
       }
