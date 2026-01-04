@@ -14,6 +14,13 @@ npm run dev
 # Open http://localhost:5173 in your browser
 ```
 
+## 📝 Notes
+
+- The application fetches products from the DummyJSON API
+- Cart state persists in localStorage
+- All filters work together seamlessly
+- Responsive design works on all screen sizes
+
 ## Features
 
 ### Core Features
