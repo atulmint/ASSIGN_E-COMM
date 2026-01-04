@@ -49,8 +49,8 @@ const ProductListing = () => {
     let filtered = [...products]
 
     // Apply search filter
-    if (debouncedSearchQuery) {
-      const query = debouncedSearchQuery.toLowerCase()
+    if (debouncedSearchQuery.trim()) {
+      const query = debouncedSearchQuery.toLowerCase().trim()
       filtered = filtered.filter(product =>
         product.name.toLowerCase().includes(query)
       )
