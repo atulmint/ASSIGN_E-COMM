@@ -2,6 +2,18 @@
 
 A React-based mini e-commerce application demonstrating component design, state management, and React fundamentals.
 
+## 🚀 Quick Start
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Open http://localhost:5173 in your browser
+```
+
 ## Features
 
 ### Core Features
