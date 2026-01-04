@@ -25,6 +25,11 @@ const Filters = ({
     onSearchChange('')
     onCategoryChange('')
     onSortChange('')
+    // Focus back on search input after clearing
+    setTimeout(() => {
+      const searchInput = document.getElementById('search')
+      if (searchInput) searchInput.focus()
+    }, 0)
   }
 
   const hasActiveFilters = searchQuery || selectedCategory || sortOrder
