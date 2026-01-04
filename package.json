@@ -2,6 +2,7 @@
   "name": "mini-ecommerce",
   "private": true,
   "version": "1.0.0",
+  "description": "A React-based mini e-commerce application with product listing, filters, and shopping cart",
   "type": "module",
   "scripts": {
     "dev": "vite",
