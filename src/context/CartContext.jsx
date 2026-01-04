@@ -22,6 +22,8 @@ export const CartProvider = ({ children }) => {
   /**
    * Add item to cart
    * If item already exists, increment quantity (up to stock limit)
+   * @param {Object} product - Product object to add
+   * @param {number} quantity - Quantity to add (default: 1)
    */
   const addToCart = useCallback((product, quantity = 1) => {
     setCartItems(prevItems => {
