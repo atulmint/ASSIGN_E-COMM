@@ -20,9 +20,9 @@ export const fetchProducts = async () => {
     return data.products.slice(0, 20).map(product => ({
       id: product.id,
       name: product.title,
-      price: product.price,
+      price: parseFloat(product.price) || 0,
       category: product.category,
-      stock: product.stock || 0,
+      stock: parseInt(product.stock) || 0,
       image: product.thumbnail,
       description: product.description,
     }))
