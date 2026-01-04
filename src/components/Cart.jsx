@@ -89,7 +89,11 @@ const Cart = ({ isOpen, onClose }) => {
                     </span>
                   </div>
                 </div>
-                <button className="checkout-btn" disabled>
+                <button 
+                  className="checkout-btn" 
+                  disabled
+                  aria-label="Checkout button (demo mode)"
+                >
                   Checkout (Demo)
                 </button>
               </div>
