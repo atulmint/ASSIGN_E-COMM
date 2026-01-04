@@ -16,6 +16,7 @@ const AppContent = () => {
         <button 
           className="cart-toggle-btn"
           onClick={() => setIsCartOpen(!isCartOpen)}
+          aria-label={`Shopping cart with ${getTotalItems()} items`}
         >
           Cart
           <span className="cart-badge">{getTotalItems()}</span>
