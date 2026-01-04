@@ -55,7 +55,9 @@ const Filters = ({
             <option value="">All Categories</option>
             {categories.map(category => (
               <option key={category} value={category}>
-                {category.charAt(0).toUpperCase() + category.slice(1)}
+                {category.split('-').map(word => 
+                  word.charAt(0).toUpperCase() + word.slice(1)
+                ).join(' ')}
               </option>
             ))}
           </select>
