@@ -47,6 +47,7 @@ const Cart = ({ isOpen, onClose }) => {
                         <button
                           className="quantity-btn"
                           onClick={() => updateQuantity(item.id, item.quantity - 1, item.stock)}
+                          aria-label="Decrease quantity"
                         >
                           −
                         </button>
@@ -55,6 +56,7 @@ const Cart = ({ isOpen, onClose }) => {
                           className="quantity-btn"
                           onClick={() => updateQuantity(item.id, item.quantity + 1, item.stock)}
                           disabled={item.quantity >= item.stock}
+                          aria-label="Increase quantity"
                         >
                           +
                         </button>
