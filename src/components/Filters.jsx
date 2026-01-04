@@ -44,6 +44,7 @@ const Filters = ({
             type="text"
             className="search-input"
             placeholder="Search by name..."
+            autoComplete="off"
             value={searchQuery}
             onChange={(e) => onSearchChange(e.target.value)}
           />
