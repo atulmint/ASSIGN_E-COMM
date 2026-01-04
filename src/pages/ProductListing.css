@@ -46,6 +46,7 @@
 .empty-state-subtitle {
   font-size: 1rem;
   color: #95a5a6;
+  margin: 0;
 }
 
 .products-grid {
