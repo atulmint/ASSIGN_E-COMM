@@ -16,7 +16,11 @@ export const CartProvider = ({ children }) => {
 
   // Save cart to localStorage whenever it changes
   useEffect(() => {
-    localStorage.setItem('cart', JSON.stringify(cartItems))
+    try {
+      localStorage.setItem('cart', JSON.stringify(cartItems))
+    } catch (error) {
+      console.error('Failed to save cart to localStorage:', error)
+    }
   }, [cartItems])
 
   /**
